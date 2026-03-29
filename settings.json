@@ -42,6 +42,17 @@
           }
         ]
       }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ~/claude-config-central/hooks/session-start-sync.sh",
+            "async": true
+          }
+        ]
+      }
     ]
   },
   "autoMemoryEnabled": true,
