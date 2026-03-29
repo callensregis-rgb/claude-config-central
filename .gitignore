@@ -1,0 +1,20 @@
+# Données locales et privées
+projects/
+statsig/
+settings.local.json
+*.env
+.env*
+*_local.json
+sync.log
+
+# Credentials
+.credentials.json
+
+# Backups et sessions
+backups/
+sessions/
+shell-snapshots/
+
+# OS
+Thumbs.db
+.DS_Store
