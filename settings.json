@@ -58,6 +58,9 @@
   "autoMemoryEnabled": true,
   "autoDreamEnabled": true,
   "skipAutoPermissionPrompt": true,
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
   "extraKnownMarketplaces": {
     "claude-plugins-official": {
       "source": {

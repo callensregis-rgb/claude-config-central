@@ -50,18 +50,19 @@ probe_symlink() {
 
   local ok=false
 
-  if $IS_WINDOWS; then
+  # Tenter ln -s d'abord (fonctionne avec Developer Mode + Git Bash)
+  ln -sf "$tmp_target" "$tmp_link" 2>/dev/null && ok=true
+  rm -f "$tmp_link"
+
+  # Fallback PowerShell si ln -s échoue sur Windows
+  if ! $ok && $IS_WINDOWS; then
     local wl wt
     wl="$(to_win_path "$tmp_link")"
     wt="$(to_win_path "$tmp_target")"
     powershell.exe -NoProfile -Command \
       "New-Item -ItemType SymbolicLink -Path '$wl' -Target '$wt' -Force | Out-Null" 2>/dev/null \
     && ok=true
-    # Nettoyer
     powershell.exe -NoProfile -Command "Remove-Item -Force '$wl' -ErrorAction SilentlyContinue" 2>/dev/null || true
-  else
-    ln -sf "$tmp_target" "$tmp_link" 2>/dev/null && ok=true
-    rm -f "$tmp_link"
   fi
 
   rm -f "$tmp_target"
@@ -74,19 +75,16 @@ make_symlink() {
   local target="$2"
   local is_dir="${3:-false}"
 
+  # Tenter ln -sf d'abord (Git Bash + Developer Mode)
+  ln -sf "$target" "$link" 2>/dev/null && return 0
+
+  # Fallback PowerShell sur Windows
   if $IS_WINDOWS; then
     local win_link win_target
     win_link="$(to_win_path "$link")"
     win_target="$(to_win_path "$target")"
-    if $is_dir; then
-      powershell.exe -NoProfile -Command \
-        "New-Item -ItemType SymbolicLink -Path '$win_link' -Target '$win_target' -Force | Out-Null" 2>/dev/null
-    else
-      powershell.exe -NoProfile -Command \
-        "New-Item -ItemType SymbolicLink -Path '$win_link' -Target '$win_target' -Force | Out-Null" 2>/dev/null
-    fi
-  else
-    ln -sf "$target" "$link"
+    powershell.exe -NoProfile -Command \
+      "New-Item -ItemType SymbolicLink -Path '$win_link' -Target '$win_target' -Force | Out-Null" 2>/dev/null
   fi
 
   # Vérifier que le symlink existe vraiment
