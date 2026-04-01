@@ -3,7 +3,9 @@
 # Déclenché par le hook ConfigChange de Claude Code (async, non-bloquant)
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-CLAUDE_DIR="$HOME/.claude"
+# Sur Windows, $HOME peut pointer vers un lecteur réseau (Z:) au lieu du profil réel.
+# USERPROFILE pointe toujours vers C:\Users\xxx, on l'utilise en priorité.
+CLAUDE_DIR="${USERPROFILE:-$HOME}/.claude"
 LOG="$REPO_DIR/sync.log"
 TIMESTAMP="$(date '+%Y-%m-%d %H:%M:%S')"
 CHANGED=0
