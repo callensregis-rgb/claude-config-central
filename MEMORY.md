@@ -18,3 +18,7 @@
 - Configurer MCP Filesystem sur Home — vault Obsidian cloné à C:\Users\Regis Callens\Documents\Obsidian Vault (WSL : /mnt/c/Users/Regis Callens/Documents/Obsidian Vault)
 
 ## Session 2026-04-19 - hook Stop
+
+## Session 2026-04-19 - hook Stop
+
+## Session 2026-04-19 - hook Stop
