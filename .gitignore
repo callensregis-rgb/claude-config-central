@@ -1,0 +1,16 @@
+# Fichiers sensibles — NE JAMAIS COMMITER
+.credentials.json
+*.credentials.json
+mcp-needs-auth-cache.json
+
+# Données internes Claude Code
+history.jsonl
+projects/
+file-history/
+paste-cache/
+backups/
+.update.lock
+*.lock
+
+# Logs
+*.log

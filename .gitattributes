@@ -1,0 +1,6 @@
+# Fins de ligne : LF partout sauf fichiers Windows-spécifiques
+* text=auto
+*.sh text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.py text eol=lf

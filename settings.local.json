@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git --version)",
+      "Bash(ssh -T git@github.com)",
+      "Bash(git config:*)",
+      "Bash(chmod 600 /home/regis_callens/.git-credentials)",
+      "Bash(curl:*)",
+      "Bash(sudo mkdir:*)",
+      "Bash(sudo mount:*)",
+      "Bash(bash:*)",
+      "Read(//mnt/d/**)",
+      "Read(//mnt/**)",
+      "Bash(mount)",
+      "Bash(pip3 list:*)",
+      "Bash(ls:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python3 -m pip install pypdf openpyxl python-docx anthropic)",
+      "Bash(python3 -c \"import pypdf; print\\('pypdf ok'\\)\")",
+      "Bash(python3 -c \"import openpyxl; print\\('openpyxl ok'\\)\")",
+      "Bash(python3 -c \"import docx; print\\('docx ok'\\)\")",
+      "Bash(apt list:*)",
+      "Bash(sudo apt-get:*)",
+      "Bash(python3 /tmp/get-pip.py --user)",
+      "Bash(python3 /tmp/get-pip.py --user --break-system-packages)",
+      "Bash(~/.local/bin/pip install:*)",
+      "Bash(python3:*)",
+      "Bash(env)",
+      "Bash(node -e \"const fs=require\\('fs'\\); try{const d=JSON.parse\\(fs.readFileSync\\(require\\('os'\\).homedir\\(\\)+'/.claude.json'\\)\\); console.log\\(Object.keys\\(d\\)\\)}catch\\(e\\){console.log\\(e.message\\)}\")",
+      "Bash(node:*)",
+      "WebSearch",
+      "Bash(echo \"  Total analysés : 4662\")",
+      "Bash(echo \"  DA \\(Droits d'Auteur\\) : 3011\")",
+      "Bash(echo \"  LD \\(Libre de Droits\\) : 1651\")",
+      "Bash(echo \"  Fichier généré : da_ld_results.json\")",
+      "Bash(echo \"  PHASE 3 terminée le : $\\(date '+%Y-%m-%d %H:%M:%S'\\)\")",
+      "Bash(pip install:*)",
+      "Bash(git clone:*)"
+    ]
+  }
+}

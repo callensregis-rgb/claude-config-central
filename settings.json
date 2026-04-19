@@ -1,0 +1,48 @@
+{
+  "statusLine": {
+    "type": "command",
+    "command": "bash /home/regis_callens/.claude/statusline-command.sh"
+  },
+  "permissions": {
+    "allow": ["Bash(git *)", "Bash(cp *)", "Bash(mkdir *)", "Read(*)", "Write(~/.claude/*)"],
+    "deny": ["Bash(rm -rf *)", "Write(*/.env*)"]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {"type": "command", "command": "cd $HOME/.claude && git pull origin main --quiet 2>/dev/null || true"},
+          {"type": "command", "command": "echo '--- MEMORY ---' && head -50 $HOME/.claude/MEMORY.md 2>/dev/null || true"}
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {"type": "command", "command": "cd $HOME/.claude && git add -A && git commit -m 'SessionEnd auto' --quiet 2>/dev/null || true && git push origin main --quiet 2>/dev/null || true"}
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {"type": "command", "command": "echo \"\\n## Session $(date +%Y-%m-%d) - hook Stop\" >> $HOME/.claude/MEMORY.md"}
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {"type": "command", "command": "if [[ \"$CLAUDE_TOOL_INPUT\" == *\"rm -rf\"* ]]; then echo 'BLOQUÉ : rm -rf interdit'; exit 1; fi"}
+        ]
+      }
+    ]
+  },
+  "env": {
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "65"
+  }
+}
