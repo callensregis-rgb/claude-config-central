@@ -27,7 +27,7 @@ TIMEOUT=10
   N="$(git rev-list HEAD..origin/main --count 2>/dev/null)" || N="?"
 
   # Pull avec rebase
-  git pull --rebase --autostash --quiet 2>/dev/null || exit 0
+  git pull --no-rebase --autostash --quiet 2>/dev/null || exit 0
 
   echo "Config mise à jour depuis GitHub (${N} nouveau$([ "$N" = "1" ] && echo '' || echo 'x') commit$([ "$N" = "1" ] && echo '' || echo 's'))" >&2
 

@@ -2,5 +2,40 @@
   "statusLine": {
     "type": "command",
     "command": "bash /home/callre009/.claude/statusline-command.sh"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /home/callre009/claude-config-central/hooks/session-start-sync.sh"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /home/callre009/claude-config-central/hooks/session-end-sync.sh"
+          }
+        ]
+      }
+    ],
+    "ConfigChange": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /home/callre009/claude-config-central/hooks/config-change-sync.sh"
+          }
+        ]
+      }
+    ]
   }
 }

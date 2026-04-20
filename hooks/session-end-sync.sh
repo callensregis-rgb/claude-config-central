@@ -29,7 +29,7 @@ TIMEOUT=30
   fi
 
   # Pull --rebase pour éviter les conflits
-  git pull --rebase --autostash --quiet 2>/dev/null || true
+  git pull --no-rebase --autostash --quiet 2>>"$REPO_DIR/sync.log" || { echo "[$(date +'%Y-%m-%d %H:%M:%S')] ERREUR pull — sync manuelle requise" >> "$REPO_DIR/sync.log"; exit 1; }
 
   # Stage tout
   git add --all
