@@ -1,7 +1,7 @@
 {
   "statusLine": {
     "type": "command",
-    "command": "bash /home/callre009/.claude/statusline-command.sh"
+    "command": "bash $HOME/.claude/statusline-command.sh"
   },
   "hooks": {
     "SessionStart": [
@@ -10,7 +10,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash /home/callre009/claude-config-central/hooks/session-start-sync.sh"
+            "command": "bash $HOME/claude-config-central/hooks/session-start-sync.sh"
           }
         ]
       }
@@ -21,7 +21,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash /home/callre009/claude-config-central/hooks/session-end-sync.sh"
+            "command": "bash $HOME/claude-config-central/hooks/session-end-sync.sh"
           }
         ]
       }
@@ -32,7 +32,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash /home/callre009/claude-config-central/hooks/config-change-sync.sh"
+            "command": "bash $HOME/claude-config-central/hooks/config-change-sync.sh"
           }
         ]
       }
