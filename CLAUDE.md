@@ -34,3 +34,7 @@ Pilotage du Plan Climat, Plan Adaptation, et bilan GES dans le cadre de la visio
 - Priorité : exactitude sur rapidité, sources vérifiables
 - Livrables : prêts à l'emploi, structurés
 - Ne jamais inventer ou extrapoler sans prévenir
+
+## Chemins importants
+- Vault Obsidian : /mnt/c/Users/callre009/Documents/Obsidian Vault
+- Dossier Energie Renouvelable : /mnt/c/Users/callre009/Documents/Obsidian Vault/Energie Renouvelable
