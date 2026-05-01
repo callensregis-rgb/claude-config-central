@@ -1,0 +1,39 @@
+<svg viewBox="0 0 420 594" xmlns="http://www.w3.org/2000/svg" font-family="monospace" font-size="11">
+  <title>Standard 6-Panel Grid (2×3) — Album Format</title>
+
+  <!-- Page background -->
+  <rect width="420" height="594" fill="#f5f5f0" stroke="#333" stroke-width="1"/>
+
+  <!-- Margins: 15px all sides, gutter 8px -->
+  <!-- Panels: width = (420-30-8)/2 = 191, height = (594-30-16)/3 = 182.67 -->
+
+  <!-- ROW 1 -->
+  <rect x="15" y="15" width="191" height="183" fill="white" stroke="#222" stroke-width="2"/>
+  <text x="110" y="107" text-anchor="middle" fill="#aaa" font-size="13">P1 — Panel 1</text>
+  <text x="110" y="122" text-anchor="middle" fill="#ccc" font-size="10">Wide / establishing</text>
+
+  <rect x="214" y="15" width="191" height="183" fill="white" stroke="#222" stroke-width="2"/>
+  <text x="310" y="107" text-anchor="middle" fill="#aaa" font-size="13">P1 — Panel 2</text>
+  <text x="310" y="122" text-anchor="middle" fill="#ccc" font-size="10">Medium / reaction</text>
+
+  <!-- ROW 2 -->
+  <rect x="15" y="206" width="191" height="183" fill="white" stroke="#222" stroke-width="2"/>
+  <text x="110" y="298" text-anchor="middle" fill="#aaa" font-size="13">P1 — Panel 3</text>
+  <text x="110" y="313" text-anchor="middle" fill="#ccc" font-size="10">Action / dialogue</text>
+
+  <rect x="214" y="206" width="191" height="183" fill="white" stroke="#222" stroke-width="2"/>
+  <text x="310" y="298" text-anchor="middle" fill="#aaa" font-size="13">P1 — Panel 4</text>
+  <text x="310" y="313" text-anchor="middle" fill="#ccc" font-size="10">Action / dialogue</text>
+
+  <!-- ROW 3 -->
+  <rect x="15" y="397" width="191" height="182" fill="white" stroke="#222" stroke-width="2"/>
+  <text x="110" y="488" text-anchor="middle" fill="#aaa" font-size="13">P1 — Panel 5</text>
+  <text x="110" y="503" text-anchor="middle" fill="#ccc" font-size="10">Close-up / detail</text>
+
+  <rect x="214" y="397" width="191" height="182" fill="white" stroke="#222" stroke-width="2"/>
+  <text x="310" y="488" text-anchor="middle" fill="#aaa" font-size="13">P1 — Panel 6</text>
+  <text x="310" y="503" text-anchor="middle" fill="#ccc" font-size="10">Exit / cliffhanger</text>
+
+  <!-- Labels -->
+  <text x="210" y="584" text-anchor="middle" fill="#888" font-size="9">bd-atelier • Standard 2×3 Grid • Album A4 format (420×594px reference)</text>
+</svg>

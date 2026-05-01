@@ -1,0 +1,61 @@
+<svg viewBox="0 0 800 2400" xmlns="http://www.w3.org/2000/svg" font-family="monospace" font-size="14">
+  <title>Webtoon Vertical Grid — Single column, mobile scroll format</title>
+
+  <!-- Page background -->
+  <rect width="800" height="2400" fill="#f5f5f0" stroke="#333" stroke-width="1"/>
+
+  <!-- Width note -->
+  <text x="400" y="30" text-anchor="middle" fill="#888" font-size="12">Standard webtoon width: 800px (scale up for 1400px platform standard)</text>
+
+  <!-- Panel 1 — tall, establishing -->
+  <rect x="20" y="50" width="760" height="500" fill="white" stroke="#222" stroke-width="2"/>
+  <text x="400" y="300" text-anchor="middle" fill="#aaa" font-size="18">Panel 1 — ESTABLISHING / WIDE</text>
+  <text x="400" y="325" text-anchor="middle" fill="#ccc" font-size="13">Tall format — world introduction, mood setting</text>
+  <text x="400" y="345" text-anchor="middle" fill="#ccc" font-size="11">Typical size: 800×500px</text>
+
+  <!-- Gutter -->
+  <rect x="20" y="550" width="760" height="15" fill="#e8e8e8"/>
+  <text x="400" y="561" text-anchor="middle" fill="#bbb" font-size="9">— gutter 15px —</text>
+
+  <!-- Panel 2 — dialogue, medium -->
+  <rect x="20" y="565" width="760" height="380" fill="white" stroke="#222" stroke-width="2"/>
+  <text x="400" y="755" text-anchor="middle" fill="#aaa" font-size="18">Panel 2 — DIALOGUE / MEDIUM</text>
+  <text x="400" y="780" text-anchor="middle" fill="#ccc" font-size="13">Character interaction, conversation</text>
+  <text x="400" y="800" text-anchor="middle" fill="#ccc" font-size="11">Typical size: 800×380px</text>
+
+  <!-- Gutter -->
+  <rect x="20" y="945" width="760" height="15" fill="#e8e8e8"/>
+
+  <!-- Panel 3 — close-up, emotion -->
+  <rect x="20" y="960" width="760" height="300" fill="white" stroke="#222" stroke-width="2"/>
+  <text x="400" y="1110" text-anchor="middle" fill="#aaa" font-size="18">Panel 3 — CLOSE-UP / EMOTION</text>
+  <text x="400" y="1135" text-anchor="middle" fill="#ccc" font-size="13">Face, detail, emotional reaction</text>
+  <text x="400" y="1155" text-anchor="middle" fill="#ccc" font-size="11">Typical size: 800×300px</text>
+
+  <!-- Gutter -->
+  <rect x="20" y="1260" width="760" height="15" fill="#e8e8e8"/>
+
+  <!-- Panel 4 — action, dynamic -->
+  <rect x="20" y="1275" width="760" height="450" fill="white" stroke="#222" stroke-width="2"/>
+  <text x="400" y="1500" text-anchor="middle" fill="#aaa" font-size="18">Panel 4 — ACTION / DYNAMIC</text>
+  <text x="400" y="1525" text-anchor="middle" fill="#ccc" font-size="13">Movement, fight, chase, impact</text>
+  <text x="400" y="1545" text-anchor="middle" fill="#ccc" font-size="11">Typical size: 800×450px — use speed lines</text>
+
+  <!-- Gutter -->
+  <rect x="20" y="1725" width="760" height="15" fill="#e8e8e8"/>
+
+  <!-- Panel 5 — exit / reveal -->
+  <rect x="20" y="1740" width="760" height="550" fill="white" stroke="#222" stroke-width="2"/>
+  <text x="400" y="2015" text-anchor="middle" fill="#aaa" font-size="18">Panel 5 — REVEAL / EXIT</text>
+  <text x="400" y="2040" text-anchor="middle" fill="#ccc" font-size="13">Episode cliffhanger or resolution</text>
+  <text x="400" y="2060" text-anchor="middle" fill="#ccc" font-size="11">Tall = maximum impact on scroll stop</text>
+
+  <!-- Notes -->
+  <rect x="20" y="2310" width="760" height="70" fill="#fffde7" stroke="#f0d040" stroke-width="1" rx="4"/>
+  <text x="400" y="2335" text-anchor="middle" fill="#666" font-size="11">WEBTOON FORMAT NOTES</text>
+  <text x="400" y="2352" text-anchor="middle" fill="#888" font-size="10">• Width: 800–1400px (platform standard varies — check Webtoon/Tapas specs)</text>
+  <text x="400" y="2368" text-anchor="middle" fill="#888" font-size="10">• Max file size per strip: 3MB | Color: RGB sRGB | Format: JPG 85–90%</text>
+
+  <!-- Footer -->
+  <text x="400" y="2392" text-anchor="middle" fill="#aaa" font-size="9">bd-atelier • Webtoon Vertical Grid • Mobile-first reading format</text>
+</svg>
