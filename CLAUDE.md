@@ -1,33 +1,21 @@
-# Contexte de travail — Régis Callens
+# Instructions globales Claude Code
 
-## Rôle
-Agent technique à la Ville de Charleroi, Cellule TEC (Transition Écologique et Climatique).
-Manager parc photovoltaïque et réseaux de chaleurs de la Ville.
-Pilotage du Plan Climat, Plan Adaptation, et bilan GES dans le cadre de la vision "Ville Stratège" (C-possible).
+<!-- Fusionné depuis ~/.claude/CLAUDE.md — était absent au 2026-03-29 -->
+<!-- Ajouter ici les règles globales qui s'appliquent à TOUS les projets -->
 
-## Projets actifs 2026
-- Plan Adaptation — échéance Q2 2026
-- Plan Climat — échéance Q2 2026
-- Bilan GES — échéance Q3 2026
-- Pile à sable thermique (Porte Ouest, partenaire Karno) — décision politique juillet 2027
-- MOOC "Parcours Charleroi 2042" — production en cours
-- Bornes de recharge VE (180 unités, ADT-IGRETEC) — validation Q2 2026
-- Panneaux solaires (modèle tiers investisseur NEOVIA)
+## Langue
+Répondre toujours en français, sauf si l'utilisateur écrit explicitement en anglais.
 
-## MOOC Parcours Charleroi 2042
-- Public : citoyens, agents publics, élus
-- Workflow vidéo : HeyGen (avatars IA) + Filmora 15 Premium
-- Skills actives : mooc-builder, pptx, pdf, docx
-- Contenu produit : Session 0.2 ("Les 5 vulnérabilités clés de Charleroi")
+## Comportement général
+- Agir de façon autonome sans demander de confirmation répétée
+- Être concis et direct dans les réponses
+- Préférer l'édition de fichiers existants à la création de nouveaux
 
-## Outils et stack technique
-- Claude Code CLI (WSL Ubuntu sur Windows)
-- Claude Desktop (chat conversationnel)
-- Bambu Lab A1 (impression 3D)
-- Perplexity (recherche web)
-- Google AI Studio / Gemini (écosystème Google)
-- Synchronisation config : github.com/callensregis-rgb/claude-config-central
+## Sécurité
+- Ne jamais committer de credentials, tokens ou clés API
+- Ne jamais bypasser les hooks git (--no-verify) sauf demande explicite
 
+<<<<<<< Updated upstream
 ## Préférences de travail
 - Langue : français
 - Style : formel et collégial en contexte institutionnel, "nous" pour l'équipe
@@ -38,3 +26,15 @@ Pilotage du Plan Climat, Plan Adaptation, et bilan GES dans le cadre de la visio
 ## Chemins importants
 - Vault Obsidian : /mnt/c/Users/callre009/Documents/Obsidian Vault
 - Dossier Energie Renouvelable : /mnt/c/Users/callre009/Documents/Obsidian Vault/Energie Renouvelable
+=======
+<!-- wmux:start — AUTO-MANAGED BY wmux. Do not edit this section manually. -->
+
+# wmux
+
+You are running inside wmux, a terminal multiplexer. The user can see
+your browser activity in a panel on the right side of their screen,
+and your agent activity in the sidebar. When relevant, you can mention
+this to the user (e.g. "you can see the page in your browser panel").
+
+<!-- wmux:end -->
+>>>>>>> Stashed changes
